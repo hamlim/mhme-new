@@ -5,7 +5,7 @@ date: 2016-08-24
 tags: ['development']
 ---
 
-Technically the name of this document is <var>designV5.html</var> however I really don't know what version this is of my personal webpage. I know I have written about redesigning this website about 2 or three times now (<a href="/post/Redesign" >once here</a> and again <a href="/post/Weekend-Projects">here</a>).
+Technically the name of this document is <var>designV5.html</var> however I really don't know what version this is of my personal webpage. I know I have written about redesigning this website about 2 or three times now (<a href="/blog/redesign">once here</a> and again <a href="/blog/weekend-projects">here</a>).
 
 The point of the matter is that I have redesigned my website several times over and each time I generally design it using the new things I have learned about design and web development. This time I wanted to focus on revitalizing my blog and making my website look a bit more professional.
 
