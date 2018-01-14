@@ -2,6 +2,7 @@ import React from 'react';
 import Avatar from '@atlaskit/avatar';
 import Link from 'gatsby-link';
 import { css } from 'react-emotion';
+import colors from '../../utils/colors';
 import me from '../../../public/static/me.jpg';
 
 const dib = css`
@@ -18,6 +19,10 @@ const title = css`
 `;
 
 const subtitle = css`
+  &,
+  & > a {
+    color: ${colors.accent};
+  }
   display: inline-block;
   & + & {
     margin-left: 1rem;

@@ -21,7 +21,7 @@ injectGlobal`
   a {
     text-decoration: none;
     cursor: pointer;
-    color: inherit;
+    color: ${colors.primraryLight};
     &:hover,
     &:focus,
     &:active { border-bottom: solid 2px ${colors.accent}; }
@@ -31,6 +31,12 @@ injectGlobal`
   };
   p {
     color: ${colors.base}
+  }
+  [data-css-video],
+  [data-css-youtube] {
+    width: 100%;
+    padding-bottom: 22%;
+    min-height: 400px;
   }
 `;
 /* eslint-enable */
