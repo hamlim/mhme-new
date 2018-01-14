@@ -74,6 +74,17 @@ const images = [
       'This was simply a photo taken from my desk chair looking out behind my apartment building while the warm Sunday breeze blows through the window.'
   }
 ];
+
+injectGlobal`
+  .is-photos a {
+    &:hover,
+    &:focus,
+    &:active {
+      border-bottom: none;
+    }
+  }
+`;
+
 export default class Photosv1 extends Component {
   componentDidMount() {
     document.documentElement.classList.add('is-photos');
@@ -84,13 +95,6 @@ export default class Photosv1 extends Component {
   }
 
   render() {
-    injectGlobal`
-      .is-photos {
-        transition: background-color 1s, color 1s;
-        background-color: var(--gray);
-        color: var(--white);
-      }
-    `;
     return (
       <Fragment>
         <Navigation />

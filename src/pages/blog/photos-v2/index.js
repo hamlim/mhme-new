@@ -126,6 +126,16 @@ const images = [
     text: ''
   }
 ];
+
+injectGlobal`
+  .is-photos a {
+    &:hover,
+    &:focus,
+    &:active {
+      border-bottom: none;
+    }
+  }
+`;
 export default class Photosv2 extends Component {
   componentDidMount() {
     document.documentElement.classList.add('is-photos');
@@ -136,13 +146,6 @@ export default class Photosv2 extends Component {
   }
 
   render() {
-    injectGlobal`
-      .is-photos {
-        transition: background-color 1s, color 1s;
-        background-color: var(--gray);
-        color: var(--white);
-      }
-    `;
     return (
       <Fragment>
         <Navigation />
