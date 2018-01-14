@@ -25,3 +25,9 @@ export const Flex = styled.div`
   ${justifyContent} ${wrap};
   ${alignItems};
 `;
+
+export const Container = styled.div`
+  width: 60rem;
+  max-width: 90vw;
+  margin: 0 auto;
+`;

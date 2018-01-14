@@ -1,7 +1,7 @@
 ---
-title: The Social Max
+title: 'The Social Max'
 author: Matthew Hamlin
-date: 2015-12-1
+date: 2015-12-01
 tags: [talking, social]
 ---
 

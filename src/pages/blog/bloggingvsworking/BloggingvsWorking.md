@@ -1,5 +1,5 @@
 ---
-title: Blogging vs Working
+title: 'Blogging vs Working'
 author: Matthew Hamlin
 date: 2015-12-15
 tags: [blogging]

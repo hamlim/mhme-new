@@ -1,7 +1,7 @@
 ---
-title: Powerpoint
+title: 'Powerpoint'
 author: Matthew Hamlin
-date: 2015-12-2
+date: 2015-12-02
 tags: [talking]
 ---
 

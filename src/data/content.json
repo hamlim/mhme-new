@@ -1,8 +1,12 @@
 [
-    {
-        "index": {
-            "title": "Hello World",
-            "subtitle": "This is a simple gatsby-starter"
-        }
+  {
+    "index": {
+      "title": "Hello World",
+      "subtitle": "This is a simple gatsby-starter",
+      "list": [
+          "/blog",
+          "/tags"
+      ]
     }
+  }
 ]

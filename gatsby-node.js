@@ -89,6 +89,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                   }
                   frontmatter {
                     tags
+                    title
                   }
                 }
               }
