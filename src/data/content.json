@@ -7,6 +7,26 @@
           "/blog",
           "/tags"
       ]
-    }
+    },
+    "blog": [
+      {
+        "title": "On Projects",
+        "route": "/blog/on-projects",
+        "excerpt": "The importance of side projects.",
+        "date": "2017-03-23"
+      },
+      {
+        "title": "Photos v1",
+        "route": "/blog/photos-v1",
+        "excerpt": "A collection of some photos from around Boston and Brookline.",
+        "date": "2017-04-23"
+      },
+      {
+        "title": "Photos v2",
+        "route": "/blog/photos-v2",
+        "excerpt": "Some more photos from around Boston.",
+        "date": "2017-05-23"
+      }
+    ]
   }
 ]

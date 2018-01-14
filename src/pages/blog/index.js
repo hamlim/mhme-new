@@ -16,12 +16,25 @@ const listStyle = css`
 
 const BlogIndex = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark;
+  console.log({data});
   return (
     <Fragment>
       <Navigation />
       <Container>
         <Box px={[3, 3, 0]}>
-          <h1>Blog</h1>
+          <h2>Blog</h2>
+          <p>One off posts:</p>
+          <ul className={listStyle}>
+            {data.allContentJson.edges[0].node.blog.map(({route, title, excerpt}, index) => (
+              <li key={index}>
+                <Link to={route}>
+                  <h3>{title}</h3>
+                </Link>
+                <p>{excerpt}</p>
+              </li>
+            ))}
+          </ul>
+          <p>All Posts:</p>
           <ul className={listStyle}>
             {posts
               .filter(post => post.node.frontmatter.title.length > 0)
@@ -56,6 +69,18 @@ export const pageQuery = graphql`
           }
           fields {
             slug
+          }
+        }
+      }
+    }
+    allContentJson {
+      edges {
+        node {
+          blog {
+            excerpt
+            date
+            title
+            route
           }
         }
       }

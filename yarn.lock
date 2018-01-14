@@ -156,9 +156,9 @@
     babel-runtime "^6.11.6"
     styled-components "^1.4.6"
 
-"@matthamlin/react-lightbox@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@matthamlin/react-lightbox/-/react-lightbox-1.0.1.tgz#a8111c38a3bc3503cf88e649a5e9defa9917e9ec"
+"@matthamlin/react-lightbox@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@matthamlin/react-lightbox/-/react-lightbox-3.0.0.tgz#258225f6e32a5b5b3d70369d1674a10de89965eb"
 
 "@types/node@^6.0.46":
   version "6.0.90"
