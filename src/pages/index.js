@@ -8,12 +8,12 @@ export default ({ data }) => {
   const myData = data.allContentJson.edges[0].node.index;
   return (
     <div>
-      <Box bg={colors.primary}>
+      <Box>
         <h1>{myData.title}</h1>
         <h3>{myData.subtitle}</h3>
         <Button>Content</Button>
       </Box>
-      <Box bg={colors.primary} py={[3, 3, 4]}>
+      <Box py={[3, 3, 4]}>
         <Box
           width={[1, 1, 1 / 2]}
           m="0 auto"

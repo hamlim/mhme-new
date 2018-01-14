@@ -37,7 +37,7 @@ const Template = ({ data }) => {
                 key={tag}
                 color="greenLight"
                 text={tag}
-                href={`/blog/tags/${tag}`}
+                href={`/tags/${tag}`}
               />
             ))}
           <div

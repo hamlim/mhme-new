@@ -2,6 +2,51 @@ const parseFilepath = require('parse-filepath');
 const path = require('path');
 const slash = require('slash');
 
+const createTagPages = (createPage, edges) => {
+  // Tell it to use our tags template.
+  const tagTemplate = path.resolve(`src/templates/tags.js`);
+  // Create an empty object to store the posts.
+  const posts = {};
+  console.log('creating posts');
+
+  // Loop through all nodes (our markdown posts) and add the tags to our post object.
+
+  edges.forEach(({ node }) => {
+    if (node.frontmatter.tags) {
+      node.frontmatter.tags.forEach(tag => {
+        if (!posts[tag]) {
+          posts[tag] = [];
+        }
+        posts[tag].push(node);
+      });
+    }
+  });
+
+  // Create the tags page with the list of tags from our posts object.
+  createPage({
+    path: '/tags',
+    component: tagTemplate,
+    context: {
+      posts
+    }
+  });
+
+  // For each of the tags in the post object, create a tag page.
+
+  Object.keys(posts).forEach(tagName => {
+    const post = posts[tagName];
+    createPage({
+      path: `/tags/${tagName}`,
+      component: tagTemplate,
+      context: {
+        posts,
+        post,
+        tag: tagName
+      }
+    });
+  });
+};
+
 exports.modifyWebpackConfig = ({ config, stage }) => {
   switch (stage) {
     case 'develop':
@@ -42,6 +87,9 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                   fields {
                     slug
                   }
+                  frontmatter {
+                    tags
+                  }
                 }
               }
             }
@@ -51,6 +99,10 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         if (result.error) {
           reject(result.error);
         }
+
+        const posts = result.data.allMarkdownRemark.edges;
+
+        createTagPages(createPage, posts);
 
         result.data.allMarkdownRemark.edges.forEach(edge => {
           createPage({

@@ -15,12 +15,11 @@ const BlogIndex = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark;
   console.log({ posts });
   return (
-    <Box bg={colors.primary}>
+    <Box>
       <Box
         width={[1, 1, 1 / 2]}
         m={['3.5rem 0 0 0', '3.5rem 0 0 0', '3.5rem auto 0 auto']}
         px={[3, 3, 0]}
-        color={colors.secondary}
       >
         <h1>Blog</h1>
         <ul className={listStyle}>

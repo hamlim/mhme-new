@@ -38,6 +38,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          'gatsby-remark-autolink-headers',
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
@@ -50,8 +51,7 @@ module.exports = {
               // If you're unsure, it's best to use the default value.
               classPrefix: 'language-'
             }
-          },
-          `gatsby-remark-autolink-headers`
+          }
         ]
       }
     },

@@ -26,7 +26,7 @@ injectGlobal`
     &:active { border-bottom: solid 2px ${colors.accent}; }
   };
   h1, h2, h3, h4, h5, h6 {
-    color: ${colors.primary}
+    color: ${colors.tertiary}
   };
   p {
     color: ${colors.base}
