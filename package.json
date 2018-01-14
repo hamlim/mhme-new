@@ -8,6 +8,7 @@
     "@atlaskit/avatar": "^8.4.0",
     "@atlaskit/button": "^6.3.0",
     "@atlaskit/tag": "^3.1.0",
+    "@matthamlin/react-lightbox": "^1.0.1",
     "emotion": "^8.0.8",
     "emotion-server": "^8.0.8",
     "feather-icons": "^3.3.0",
