@@ -1,11 +1,12 @@
+/* eslint-disable */
 import React from 'react';
 import styled, { injectGlobal } from 'react-emotion';
 import { fontSize } from 'styled-system';
 import PropTypes from 'prop-types';
 import colors from '../utils/colors';
 
-/* eslint-disable */
 import normalize from 'normalize.css';
+import prismcss from 'prismjs/themes/prism-tomorrow.css';
 injectGlobal`
   * {
       font-family: -apple-system, BlinkMacSystemFont,
