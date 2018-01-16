@@ -17,6 +17,8 @@ injectGlobal`
              'segoe ui', arial,
              sans-serif;
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
   };
   a {
     text-decoration: none;
@@ -27,6 +29,7 @@ injectGlobal`
     &:active { border-bottom: solid 2px ${colors.accent}; }
   };
   h1, h2, h3, h4, h5, h6 {
+    padding: .5em 0;
     color: ${colors.tertiary}
   };
   p {

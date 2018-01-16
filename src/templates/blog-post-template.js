@@ -2,7 +2,7 @@
 import React from 'react';
 import Tag from '@atlaskit/tag';
 import { css } from 'react-emotion';
-import { Box, Container } from '../components/Layout';
+import { Container } from '../components/Layout';
 import colors from '../utils/colors';
 import Navigation from '../components/Navigation';
 
@@ -24,23 +24,18 @@ const Template = ({ data }) => {
     <Fragment>
       <Navigation />
       <Container>
-        <Box px={[3, 3, 0]}>
-          <h2 className={title}>{post.frontmatter.title}</h2>
-          {post.frontmatter.tags &&
-            post.frontmatter.tags.length > 0 &&
-            post.frontmatter.tags.map(tag => (
-              <Tag
-                key={tag}
-                color="greenLight"
-                text={tag}
-                href={`/tags/${tag}`}
-              />
-            ))}
-          <div
-            className={body}
-            dangerouslySetInnerHTML={{ __html: post.html }}
-          />
-        </Box>
+        <h2 className={title}>{post.frontmatter.title}</h2>
+        {post.frontmatter.tags &&
+          post.frontmatter.tags.length > 0 &&
+          post.frontmatter.tags.map(tag => (
+            <Tag
+              key={tag}
+              color="greenLight"
+              text={tag}
+              href={`/tags/${tag}`}
+            />
+          ))}
+        <div className={body} dangerouslySetInnerHTML={{ __html: post.html }} />
       </Container>
     </Fragment>
   );

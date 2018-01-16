@@ -1,20 +1,11 @@
-import { css } from 'react-emotion';
+import resp from '@matthamlin/resp';
 
 const sizes = {
-  large: 1024,
-  mid: 832,
-  small: 640
+  small: 640,
+  medium: 832,
+  large: 1024
 };
 
-// Iterate through the sizes and create a media template
-const media = Object.keys(sizes).reduce((acc, label) => {
-  acc[label] = (...args) => css`
-    @media (min-width: ${sizes[label] / 16}em) {
-      ${css(...args)};
-    }
-  `;
+const { small, medium, large } = resp(sizes);
 
-  return acc;
-}, {});
-
-export default media;
+export { small, medium, large };

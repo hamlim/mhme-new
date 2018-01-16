@@ -15,7 +15,7 @@ export default () => (
           I am Matt Hamlin, a web developer.
         </h2>
         <p className="mv4">
-          I make small <Link href="/projects">side projects</Link> of all kinds
+          I make small <Link to="/projects">side projects</Link> of all kinds
           in my free time, and work with some pretty smart people at Wayfair
           currently.
         </p>
@@ -35,18 +35,3 @@ export default () => (
     </Container>
   </main>
 );
-
-// export const pageQuery = graphql`
-//   query contentQuery {
-//     allContentJson {
-//       edges {
-//         node {
-//           index {
-//             title
-//             subtitle
-//           }
-//         }
-//       }
-//     }
-//   }
-// `;

@@ -9,6 +9,7 @@
     "@atlaskit/button": "^6.3.0",
     "@atlaskit/tag": "^3.1.0",
     "@matthamlin/react-lightbox": "^3.0.0",
+    "@matthamlin/resp": "^2.0.0",
     "emotion": "^8.0.8",
     "emotion-server": "^8.0.8",
     "feather-icons": "^3.3.0",

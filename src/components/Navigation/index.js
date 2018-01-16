@@ -4,6 +4,7 @@ import Link from 'gatsby-link';
 import { css } from 'react-emotion';
 import colors from '../../utils/colors';
 import me from '../../../public/static/me.jpg';
+import { large } from '../../utils/media';
 
 const dib = css`
   display: inline-block;
@@ -11,11 +12,26 @@ const dib = css`
 
 const df = css`
   display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  & div:first-child {
+    display: none;
+  }
+  ${large`
+    text-align: left;
+    justify-content: initial;
+    & div:first-child {
+      display: initial;
+    }
+  `};
 `;
 
 const title = css`
   display: inline-block;
-  margin-left: 2rem;
+  ${large`
+    margin-left: 2rem;
+  `};
 `;
 
 const subtitle = css`
@@ -32,10 +48,24 @@ const subtitle = css`
   }
 `;
 
+const subnav = css`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & a {
+    font-size: 2rem;
+  }
+`;
+
 const nav = css`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  ${large`
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+  `};
 `;
 
 export default () => (
@@ -51,7 +81,7 @@ export default () => (
       />
       <h1 className={title}>Matt Hamlin</h1>
     </div>
-    <div>
+    <div className={subnav}>
       <h4 className={subtitle}>
         <Link to="/blog">Blog</Link>
       </h4>
