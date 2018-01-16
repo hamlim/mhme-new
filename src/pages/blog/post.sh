@@ -11,14 +11,14 @@ if [ -z "$post" ]; then
 else
     #Create a folder with the title; replace space with '-'
     notempty=${post// /-}
-    lower=${notempty,,}
-    mkdir "$lower"
-    cd $lower
+    mkdir "$notempty"
+    cd $notempty
     touch index.md
     echo "---" >> index.md
     echo "title: $post" >> index.md
     echo "author: " >> index.md
     echo "date: $(date +'%Y-%m-%d')" >> index.md
+    echo "tags: ['']" >> index.md
     echo "---" >> index.md
     exit 0
 fi
