@@ -16,7 +16,6 @@ const listStyle = css`
 
 const BlogIndex = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark;
-  console.log({ data });
   return (
     <Fragment>
       <Navigation />

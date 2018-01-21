@@ -1,6 +1,6 @@
 import React from 'react';
-import Avatar from '@atlaskit/avatar';
 import Link from 'gatsby-link';
+// import Avatar from '@atlaskit/avatar';
 import { css } from 'react-emotion';
 import colors from '../../utils/colors';
 import me from '../../../public/static/me.jpg';
@@ -71,14 +71,14 @@ const nav = css`
 export default () => (
   <nav className={nav}>
     <div className={df}>
-      <Avatar
+      {/* <Avatar
         name="Matt Hamlin"
         size="xlarge"
         src={me}
         href="/"
         presence="online"
         className={dib}
-      />
+      /> */}
       <h1 className={title}>Matt Hamlin</h1>
     </div>
     <div className={subnav}>
