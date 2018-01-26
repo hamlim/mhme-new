@@ -16,6 +16,16 @@ const title = css`
 
 const body = css`
   color: ${colors.base};
+  margin-bottom: 5rem;
+
+  & ul,
+  & ol {
+    list-style-position: inside;
+    margin: 0.5rem;
+  }
+  & p + p {
+    margin-top: 0.5rem;
+  }
 `;
 
 const Template = ({ data }) => {

@@ -4,8 +4,8 @@ import styled from 'react-emotion';
 import Link from 'gatsby-link';
 import { Container } from '../../components/Layout';
 import Navigation from '../../components/Navigation';
-import dm2 from '../../../public/static/dm1.png';
-import dm3 from '../../../public/static/dm2.png';
+import dm2 from '../../../static/dm1.png';
+import dm3 from '../../../static/dm2.png';
 
 const Title = styled.h1`
   font-size: 2.5rem;

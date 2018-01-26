@@ -3,12 +3,7 @@ import Link from 'gatsby-link';
 // import Avatar from '@atlaskit/avatar';
 import { css } from 'react-emotion';
 import colors from '../../utils/colors';
-import me from '../../../public/static/me.jpg';
 import { large } from '../../utils/media';
-
-const dib = css`
-  display: inline-block;
-`;
 
 const df = css`
   display: flex;
@@ -57,6 +52,14 @@ const subnav = css`
   }
 `;
 
+const headerlink = css`
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    border: none;
+  }
+`;
+
 const nav = css`
   display: flex;
   flex-direction: column;
@@ -71,15 +74,9 @@ const nav = css`
 export default () => (
   <nav className={nav}>
     <div className={df}>
-      {/* <Avatar
-        name="Matt Hamlin"
-        size="xlarge"
-        src={me}
-        href="/"
-        presence="online"
-        className={dib}
-      /> */}
-      <h1 className={title}>Matt Hamlin</h1>
+      <Link to="/" className={headerlink}>
+        <h1 className={title}>Matt Hamlin</h1>
+      </Link>
     </div>
     <div className={subnav}>
       <h4 className={subtitle}>

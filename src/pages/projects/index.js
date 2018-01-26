@@ -46,6 +46,17 @@ export default () => (
       >
         <Project>
           <h4>
+            <StyledLink href="https://github.com/hamlim/postcss-plugin-initial">
+              postcss-plugin-initial
+            </StyledLink>{' '}
+            - 2018
+          </h4>
+          <Description>
+            A universal config file format for web applications.
+          </Description>
+        </Project>
+        <Project>
+          <h4>
             <StyledLink href="https://github.com/hamlim/app-config">
               appconfig
             </StyledLink>{' '}
