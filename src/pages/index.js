@@ -45,7 +45,6 @@ const p = css`
 `;
 
 export default ({ data }) => {
-  console.log(data);
   return (
     <main>
       <Navigation static />
