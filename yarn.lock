@@ -4514,8 +4514,8 @@ flat-cache@^1.2.1:
     write "^0.2.1"
 
 flat@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/flat/-/flat-2.0.1.tgz#70e29188a74be0c3c89409eed1fa9577907ae32f"
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/flat/-/flat-2.0.2.tgz#d631430678b023a2f9bc10a23ac4ffad7e16b0f2"
   dependencies:
     is-buffer "~1.1.2"
 
